@@ -8,13 +8,15 @@ import oead
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Quick tool for yaz0 compression')
+    parser.add_argument('--level', '-L', help="Compression level (default 7)", default=7, type=int)
     parser.add_argument('input', help="File to compress")
     parser.add_argument(
-        '--output', '-O',
+        'output',
         help="Where to output compressed file (default same folder with \"s\" extension prefix)",
+        nargs='?',
+        default=None,
         type=str
     )
-    parser.add_argument('--level', '-L', help="Compression level (default 7)", default=7, type=int)
     return parser.parse_args()
 
 

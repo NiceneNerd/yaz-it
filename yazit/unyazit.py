@@ -10,8 +10,10 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Quick tool for yaz0 decompression')
     parser.add_argument('input', help="File to decompress")
     parser.add_argument(
-        '--output', '-O',
+        'output',
         help="Where to output decompressed file (default same folder without extension prefix)",
+        nargs='?',
+        default=None,
         type=str
     )
     return parser.parse_args()
