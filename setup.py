@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='yaz-it',
-    version='0.2.0',
+    version='0.3.0',
     author='NiceneNerd',
     author_email='macadamiadaze@gmail.com',
     description='Quick tool for yaz0 compression/decompression',
@@ -11,7 +11,9 @@ setup(
     entry_points = {
         'console_scripts': [
             'yazit = yazit.yazit:main',
+            'yaz = yazit.yazit:main',
             'unyazit = yazit.unyazit:main',
+            'unyaz = yazit.unyazit:main',
         ]
     },
     classifiers=[
