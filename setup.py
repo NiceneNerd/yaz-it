@@ -13,7 +13,7 @@ setup(
             'yazit = yazit.yazit:main',
             'yaz = yazit.yazit:main',
             'unyazit = yazit.unyazit:main',
-            'unyaz = yazit.unyazit:main',
+            'unyaz = yazit.unyazit:main'
         ]
     },
     classifiers=[
